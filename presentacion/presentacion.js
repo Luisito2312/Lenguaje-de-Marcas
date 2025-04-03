@@ -21,9 +21,16 @@ nameColorButton.addEventListener('click', () => {
     const titleName = document.getElementById('name');
     if (titleName.style.color == 'red'){
         titleName.style.color = 'black';
-        titleName.style = 'font-style: italic';
+        if (titleName.style = 'font-style: '){
+            titleName.style = 'font-style: italic';
+        }else{
+            titleName.style = 'font-style: ';
+            
+        }
+        
     }else{
         titleName.style.color = 'red';
+        
         
     }
 });
@@ -37,3 +44,30 @@ changeNameColor.addEventListener('click', function () {
     alert("¿WHO IS JAP?")
     
 })
+
+const botonTexto = document.getElementById('colorButton');
+
+botonTexto.addEventListener('click', () => {
+    const titleName = document.getElementById('name');
+    if (titleName.textContent == 'Antonio Tovar'){
+        titleName.textContent = '1º DAW';
+        
+    }else{
+        titleName.textContent = 'Antonio Tovar';
+        
+    }
+});
+
+
+const botonOcultar = document.getElementById('colorButton');
+
+botonTexto.addEventListener('click', () => {
+    const titleName = document.getElementById('name');
+    if (titleName.style.display == 'none'){
+        titleName.style.display = 'block';
+        
+    }else{
+        titleName.style.display = 'none';
+        
+    }
+});
