@@ -2,16 +2,16 @@
 <button id="changeTextButton">Change Text</button>
 <button id="resetTextButton">Reset Text</button>
 <script>
-  // Get the paragraph and button elements
+
   const paragraph = document.getElementById("myParagraph");
   const button = document.getElementById("changeTextButton");
 
-  // Add an event listener to the button
+  //boton 1
   button.addEventListener("click", function () {
     paragraph.textContent = "Text Changed!";
   });
 
-  // Add an event listener to the second button to reset the text
+  //boton 2
   resetTextButton.addEventListener("click", function () {
     paragraph.textContent = "Initial Text";
   });
