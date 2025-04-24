@@ -71,3 +71,20 @@ botonTexto.addEventListener('click', () => {
         
     }
 });
+
+let fps = ["Calistenia, Rap, Química"];
+
+let orderListEl = document.getElementById("order_list");
+for (var i = 0; i<fps-length; i++){
+    let li = document.createElementById("li");
+    li.innerText = fps(i);
+    orderListEl.appendChild(li);
+}
+
+fps.forEach(item => {
+    let li = document.createElementById("li");
+    li.innerText = fps(i);
+    orderListEl.appendChild(li);
+
+    
+});
